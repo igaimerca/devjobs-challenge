@@ -26,9 +26,9 @@ Users should be able to:
 
 Initialzed the project ![](./screenshots/readme.png)
 Added a header ![](./screenshots/header.png)
-Added a search bar container ![](./screenshots/searchbar_container.png)
+<!-- Added a search bar container ![](./screenshots/searchbar_container.png)
 Added jobs filters ![](./screenshots/filters.png)
-Completed searchbar ![](./screenshots/searchbar.png)
+Completed searchbar ![](./screenshots/searchbar.png) -->
 
 
 ### Links

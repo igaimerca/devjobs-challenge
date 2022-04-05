@@ -3,10 +3,7 @@
 :root {
   /* Font Family */
   --font-family: 'Kumbh Sans', sans-serif;
-
-  /* Secondary (sec) colors */
-  --sec-white: #fff;
-  --sec-light-grey: : #F4F6F8;
+  
 
   /* Font sizes */
   --font-body: 1rem;
@@ -22,6 +19,54 @@
   --screen-lg: 992px;
   --screen-xl: 1200px;
 }
+
+.theme-light {
+    --primary-accent: #939bf4;
+    --main-text: #19202d;
+    --faded-text: #6e8098;
+    --light-text: #8c8f96;
+    --accent-text: #5964e0;
+    --dark-background: #f4f6f8;
+    --text-white: #ffffff;
+    --light-background: #ffffff;
+    --button-background: #5964e0;
+    --button-hover: #939bf4;
+    --secondary-button-background: #eef0fc;
+    --secondary-button-hover: #c5c9f4;
+    --checkmark-background: #e7e8e9;
+    --checkmark-background-hover: #d5d8f7;
+    --tertiary: #9daec2;
+    --tertiary-accent: #6e8098;
+    --danger: #ff293b;
+    --danger-hover: #ff6976;
+    --success: #258c53;
+    --success-hover: #7cba98;
+  }
+  
+  .theme-dark {
+    --primary: #5964e0;
+    --primary-accent: #939bf4;
+    --main-text: #ffffff;
+    --faded-text: #6e8098;
+    --light-text: #ffffff;
+    --accent-text: #5964e0;
+    --dark-background: #121721;
+    --light-background: #19202d;
+    --button-background: #5964e0;
+    --button-hover: #939bf4;
+    --light-button-text: #ffffff;
+    --secondary-button-background: #303642;
+    --secondary-button-hover: #696e76;
+    --checkmark-background: #313743;
+    --checkmark-background-hover: #3d4453;
+    --tertiary: #9daec2;
+    --tertiary-accent: #6e8098;
+    --danger: #ff293b;
+    --danger-hover: #ff6976;
+    --success: #258c53;
+    --success-hover: #7cba98;
+  }
+
 body,
 html {
   margin: 0;
