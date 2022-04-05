@@ -305,16 +305,6 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-avataar-generator@^0.0.20:
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/avataar-generator/-/avataar-generator-0.0.20.tgz#485f6a25afceab6646b9f47b54090f1bb7a9c000"
-  integrity sha512-zZmsX2+sEqNwhfYwpyuCBejMzVOjVWPA9MDKyZlp6B84uIC8OdT5/5G+H065r/EkS2Ahuvyx/Qx0wo30pOKUCQ==
-  dependencies:
-    md5-hash "^1.0.1"
-    react "^17.0.2"
-    react-dom "^17.0.2"
-    sass "^1.49.8"
-
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
@@ -650,11 +640,6 @@ loose-envify@^1.1.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-md5-hash@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/md5-hash/-/md5-hash-1.0.1.tgz#957d4a99987fa871ed451583360af5118baad725"
-  integrity sha1-lX1KmZh/qHHtRRWDNgr1EYuq1yU=
-
 ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
@@ -774,7 +759,7 @@ safe-buffer@~5.1.1:
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-sass@^1.49.11, sass@^1.49.8:
+sass@^1.49.11:
   version "1.49.11"
   resolved "https://registry.npmjs.org/sass/-/sass-1.49.11.tgz"
   integrity sha512-wvS/geXgHUGs6A/4ud5BFIWKO1nKd7wYIGimDk4q4GFkJicILActpv9ueMT4eRGSsp1BdKHuw1WwAHXbhsJELQ==

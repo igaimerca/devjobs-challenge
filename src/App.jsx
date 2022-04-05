@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Header from './components/Header/Header';
+import SearchBar from './components/SeachBar/SearchBar';
 
 function App() {
     useEffect(() => {
@@ -8,7 +9,10 @@ function App() {
 
   return (
     <div>
+        <div className="top-bar-section">
         <Header />
+        <SearchBar />
+        </div>
     </div>
   )
 }

@@ -84,3 +84,6 @@ p {
 img {
   max-width: 100%;
 }
+.top-bar-section {
+    position: relative;
+}
