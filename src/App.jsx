@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import JobCard from "./components/JobCard/JobCard";
 import SearchBar from "./components/SeachBar/SearchBar";
+import Button from "./components/Button/Button";
 import jobs from "./data.js";
 
 function App() {
-  const [fullTimeContract, setFullTimeContract] = useState(true);
+  const [jobsPerPage, setJobsPerPage] = useState(9);
+  const [fullTimeContract, setFullTimeContract] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchByLocation, setSearchByLocation] = useState("");
   const [filteredJobs, setFilteredJobs] = useState(
@@ -63,13 +65,22 @@ function App() {
             setFullTimeContract(fullTimeContract)
           }
         />
-        <div className="jobs flex">
-          {filteredJobs &&
-            filteredJobs.map((job) => (
-              <JobCard key={job.id} currentJob={job} />
-            ))}
-        </div>
       </div>
+
+      <div className="jobs flex">
+        {filteredJobs &&
+          filteredJobs
+            .slice(0, jobsPerPage)
+            .map((job) => <JobCard key={job.id} currentJob={job} />)}
+      </div>
+      {jobsPerPage < jobs.length && (
+        <div
+          className="load-more-btn flex"
+          onClick={() => setJobsPerPage(jobs.length)}
+        >
+          <Button text="Load More" />
+        </div>
+      )}
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import "./SearchButton.scss";
+import "./Button.scss";
 
-function SearchButton() {
+function SearchButton({text}) {
     return (
         <button className="btn">
-            Search
+            {text}
         </button>
     )
 }

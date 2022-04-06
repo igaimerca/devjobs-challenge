@@ -30,6 +30,7 @@ Added search filters and submit button ![](./screenshots/filters.png)
 Added job card ![](./screenshots/jobcard.png)
 Added all jobs ![](./screenshots/jobs.png)
 Worked on search jobs logic ![](./screenshots/jobs_search.png)
+Added load more functionality ![](./screenshots/load_more.png)
 
 ### Links
 
