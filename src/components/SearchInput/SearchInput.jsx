@@ -1,13 +1,26 @@
-import React from 'react'
+import React from "react";
 import "./SearchInput.scss";
 
-function SearchInput({icon, placeholder}) {
-    return (
-        <div className="search-input flex">
-            <img src={icon} alt="" />
-            <input type="text" placeholder="Filter by title, companies, expertise…" />
-        </div>
-    )
+function SearchInput({
+  icon,
+  placeholder,
+  locationInput,
+  location,
+  onSearchByLocation,
+  searchQuery,
+  onSearch,
+}) {
+  return (
+    <div className="search-input flex">
+      <img src={icon} alt="" />
+      <input
+        value={locationInput ? location : searchQuery}
+        onChange={(e) => locationInput ? onSearchByLocation(e.target.value) : onSearch(e.target.value)}
+        type="text"
+        placeholder={placeholder}
+      />
+    </div>
+  );
 }
 
-export default SearchInput
+export default SearchInput;

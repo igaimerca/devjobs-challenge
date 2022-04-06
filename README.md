@@ -29,6 +29,7 @@ Added a search bar container ![](./screenshots/added_searchbar.png)
 Added search filters and submit button ![](./screenshots/filters.png)
 Added job card ![](./screenshots/jobcard.png)
 Added all jobs ![](./screenshots/jobs.png)
+Worked on search jobs logic ![](./screenshots/jobs_search.png)
 
 ### Links
 
