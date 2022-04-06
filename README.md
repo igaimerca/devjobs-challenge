@@ -24,14 +24,15 @@ Users should be able to:
 
 ### Screenshots
 
-##### Initialzed the project + Added a header ![](./screenshots/header.png)
-##### Added a search bar container ![](./screenshots/added_searchbar.png)
-##### Added search filters and submit button ![](./screenshots/filters.png)
-##### Added job card ![](./screenshots/jobcard.png)
-##### Added all jobs ![](./screenshots/jobs.png)
-##### Worked on search jobs logic ![](./screenshots/jobs_search.png)
-##### Added load more functionality ![](./screenshots/load_more.png)
-##### Added get current job logic ![](./screenshots/current_job_logic.png)
+##### 2ac3396 Initialized the project ![](./screenshots/initial.png)
+##### 223675e Added Header ![](./screenshots/header.png)
+##### a6d76f6 Added a search bar container ![](./screenshots/added_searchbar.png)
+##### ce566cf Added search filters and submit button ![](./screenshots/filters.png)
+##### 9619b32 Added job card ![](./screenshots/jobcard.png)
+##### eabea94 Added all jobs ![](./screenshots/jobs.png)
+##### 11e0c11 Worked on search jobs logic ![](./screenshots/jobs_search.png)
+##### 38e60c9 Added load more functionality ![](./screenshots/load_more.png)
+##### 7bc5dfa Added get current job logic ![](./screenshots/current_job_logic.png)
 
 ### Links
 
