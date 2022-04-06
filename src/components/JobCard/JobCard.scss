@@ -1,19 +1,31 @@
 .jobs {
     justify-content: start;
-    width: 80%;
+    width: 92%;
+    flex-wrap: wrap;
     margin: 4rem auto;
 }
 .job-card {
     background-color: #fff;
+    margin: 1rem;
     padding: 2rem;
-    width: 350px;
+    width: 315px;
     height: 180px;
-    border-radius: 3px;
+    border-radius: 5px;
+    cursor: pointer;
     position: relative;
-    .company-logo {
+    .logo-container {
+        height: 50px;
+        width: 50px;
         position: absolute;
+        padding: 0.2rem;
         top: -1rem;
+        border-radius: 10px;
         left: 1.5rem;
+    }
+    .company-logo {
+        height: 50%;
+        width: auto;
+        object-fit: contain;
     }
     .details {
         margin: 1rem 0 3rem 0;
@@ -21,6 +33,7 @@
     h2 {
         color: var(--main-text);
         margin: 0.5rem 0;
+        font-size: var(--font-h2);
     }
     p {
         margin: 0
