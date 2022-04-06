@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import JobHeader from "../../components/JobHeader/JobHeader";
+import Header from "../../components/Header/Header"
 
 const JobDetailsPage = ({ jobs, currentJob, setCurrentJob }) => {
   const params = useParams();
@@ -9,11 +11,10 @@ const JobDetailsPage = ({ jobs, currentJob, setCurrentJob }) => {
     setCurrentJob(jobs.find((job) => job.id === id));
   }, [jobs, id, setCurrentJob]);
 
-  console.log(currentJob);
-
   return (
     <>
-      {currentJob.company}
+    <Header />
+     <JobHeader currentJob={currentJob} />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Button.scss";
 
-function SearchButton({text}) {
+function Button({text}) {
     return (
         <button className="btn">
             {text}
@@ -9,4 +9,4 @@ function SearchButton({text}) {
     )
 }
 
-export default SearchButton
+export default Button

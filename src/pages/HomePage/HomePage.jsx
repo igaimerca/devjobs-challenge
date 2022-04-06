@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import JobCard from "../../components/JobCard/JobCard";
 import SearchBar from "../../components/SeachBar/SearchBar";
 import Button from "../../components/Button/Button";
-import jobs from "./data.js";
+import jobs from "../../data.js";
 import "./HomePage.scss";
 
 function HomePage() {
