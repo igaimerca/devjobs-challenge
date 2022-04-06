@@ -6,7 +6,7 @@ This is a solution to the [Devjobs web app challenge on Frontend Mentor](https:/
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
