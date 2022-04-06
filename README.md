@@ -25,10 +25,8 @@ Users should be able to:
 ### Screenshots
 
 Initialzed the project + Added a header ![](./screenshots/header.png)
- Added a search bar container ![](./screenshots/added_searchbar.png)
- <!--
-Added jobs filters ![](./screenshots/filters.png)
-Completed searchbar ![](./screenshots/searchbar.png) -->
+Added a search bar container ![](./screenshots/added_searchbar.png)
+Added search filters and submit button ![](./screenshots/filters.png)
 
 
 ### Links

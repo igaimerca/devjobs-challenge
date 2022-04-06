@@ -1,0 +1,12 @@
+.btn {
+    padding: 0.9rem 2rem;
+    border: none;
+    background-color: var(--button-background);
+    color: var(--text-white);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--button-hover);
+    }
+}

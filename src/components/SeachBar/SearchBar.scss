@@ -1,12 +1,54 @@
 .search-bar {
+
     background-color: var(--light-background);
     height: 80px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: -2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
+    .submit-search {
+        border-left: none !important;
+        flex: 1;
+        justify-content: space-around;
+
+        .checkbox {
+            height: 25px;
+            width: 25px;
+            background-color: var(--checkmark-background);
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 1rem;
+            position: relative;
+
+            &:hover {
+                background-color: var(--checkmark-background-hover);
+            }
+        }
+
+        .checkbox.active {
+            background-color: var(--primary);
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 5px;
+                height: 10px;
+                top: 3px;
+                right: 8px;
+                position: absolute;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+        b {
+            color: var(--main-text);
+        }
+    }
 }

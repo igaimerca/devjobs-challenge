@@ -1,0 +1,12 @@
+.search-input {
+    flex: 1;
+    border-right: 1px solid var(--border-color);
+
+    input {
+        border: none;
+        width: 77%;
+        padding: 1rem;
+        outline: none;
+        font-size: 0.9em;
+    }
+}
