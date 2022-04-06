@@ -1,87 +1,29 @@
-import { useEffect, useState } from "react";
-import Header from "./components/Header/Header";
-import JobCard from "./components/JobCard/JobCard";
-import SearchBar from "./components/SeachBar/SearchBar";
-import Button from "./components/Button/Button";
+import React, { useState } from "react";
+import HomePage from "./pages/HomePage/HomePage";
+import JobDetailsPage from "./pages/JobDetailsPage/JobDetailsPage";
 import jobs from "./data.js";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
-  const [jobsPerPage, setJobsPerPage] = useState(9);
-  const [fullTimeContract, setFullTimeContract] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [searchByLocation, setSearchByLocation] = useState("");
-  const [filteredJobs, setFilteredJobs] = useState(
-    fullTimeContract ? jobs.filter((job) => job.contract === "Full Time") : jobs
-  );
-
-  useEffect(() => {
-    if (searchQuery || searchByLocation) {
-      setFilteredJobs(
-        fullTimeContract
-          ? jobs.filter(
-              (job) =>
-                job.position
-                  .toLowerCase()
-                  .includes(searchQuery?.toLowerCase()) &&
-                job.location
-                  .toLowerCase()
-                  .includes(searchByLocation?.toLowerCase()) &&
-                job.contract === "Full Time"
-            )
-          : jobs.filter(
-              (job) =>
-                job.position
-                  .toLowerCase()
-                  .includes(searchQuery?.toLowerCase()) &&
-                job.location
-                  .toLowerCase()
-                  .includes(searchByLocation?.toLowerCase())
-            )
-      );
-    } else {
-      setFilteredJobs(
-        fullTimeContract
-          ? jobs.filter((job) => job.contract === "Full Time")
-          : jobs
-      );
-    }
-  }, [searchQuery, searchByLocation, fullTimeContract]);
-
-  useEffect(() => {
-    document.documentElement.className = "theme-light";
-  }, []);
+  const [currentJob, setCurrentJob] = useState({});
 
   return (
-    <div>
-      <div className="top-bar-section">
-        <Header />
-        <SearchBar
-          location={searchByLocation}
-          onSearchByLocation={(location) => setSearchByLocation(location)}
-          searchQuery={searchQuery}
-          onSearch={(query) => setSearchQuery(query)}
-          fullTimeContract={fullTimeContract}
-          onChangeContract={(fullTimeContract) =>
-            setFullTimeContract(fullTimeContract)
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/job/:id"
+          element={
+            <JobDetailsPage
+              jobs={jobs}
+              currentJob={currentJob}
+              setCurrentJob={setCurrentJob}
+            />
           }
-        />
-      </div>
-
-      <div className="jobs flex">
-        {filteredJobs &&
-          filteredJobs
-            .slice(0, jobsPerPage)
-            .map((job) => <JobCard key={job.id} currentJob={job} />)}
-      </div>
-      {jobsPerPage < jobs.length && (
-        <div
-          className="load-more-btn flex"
-          onClick={() => setJobsPerPage(jobs.length)}
-        >
-          <Button text="Load More" />
-        </div>
-      )}
-    </div>
+        ></Route>
+      </Routes>
+    </Router>
   );
 }
 
