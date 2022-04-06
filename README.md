@@ -33,6 +33,7 @@ Users should be able to:
 ##### 11e0c11 Worked on search jobs logic ![](./screenshots/jobs_search.png)
 ##### 38e60c9 Added load more functionality ![](./screenshots/load_more.png)
 ##### 7bc5dfa Added get current job logic ![](./screenshots/current_job_logic.png)
+##### 2e93316 Added post details top header ![](./screenshots/header.png)
 
 ### Links
 

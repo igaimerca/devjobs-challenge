@@ -6,7 +6,7 @@ import './JobHeader.scss';
 const JobHeader = ({ currentJob }) => {
   return (
     <div className='job-banner'>
-
+        
     </div>
   );
 };

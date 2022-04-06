@@ -1,9 +1,11 @@
 import React from 'react';
 import "./JobCard.scss";
+import { useNavigate } from "react-router-dom";
 
 function JobCard({ currentJob }) {
+    const navigate = useNavigate();
     return (
-        <div className="job-card">
+        <div className="job-card" onClick={() => navigate(`job/${currentJob.id}`)}>
             <div style={{ backgroundColor: currentJob.logoBackground }} className="flex logo-container">
                 <img src={currentJob.logo} className="company-logo" alt="" />
             </div>
