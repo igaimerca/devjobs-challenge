@@ -31,6 +31,7 @@ Users should be able to:
 ##### Added all jobs ![](./screenshots/jobs.png)
 ##### Worked on search jobs logic ![](./screenshots/jobs_search.png)
 ##### Added load more functionality ![](./screenshots/load_more.png)
+##### Added get current job logic ![](./screenshots/current_job_logic.png)
 
 ### Links
 
