@@ -31,6 +31,9 @@
         margin: 1rem 0 3rem 0;
     }
     h2 {
+        &:hover {
+            color: var(--faded-text);
+        }
         color: var(--main-text);
         margin: 0.5rem 0;
         font-size: var(--font-h2);
