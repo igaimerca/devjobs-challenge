@@ -11,7 +11,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/"
+          element={
+            <HomePage currentJob={currentJob} setCurrentJob={setCurrentJob} />
+          }
+        />
         <Route
           path="/job/:id"
           element={
