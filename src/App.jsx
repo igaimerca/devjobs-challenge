@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Header from './components/Header/Header';
+import JobCard from './components/JobCard/JobCard';
 import SearchBar from './components/SeachBar/SearchBar';
 
 function App() {
@@ -7,14 +8,17 @@ function App() {
         document.documentElement.className = "theme-light";
     }, [])
 
-  return (
-    <div>
-        <div className="top-bar-section">
-        <Header />
-        <SearchBar />
+    return (
+        <div>
+            <div className="top-bar-section">
+                <Header />
+                <SearchBar />
+                <div className="jobs flex">
+                    <JobCard />
+                </div>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default App

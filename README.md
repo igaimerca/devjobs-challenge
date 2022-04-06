@@ -27,6 +27,7 @@ Users should be able to:
 Initialzed the project + Added a header ![](./screenshots/header.png)
 Added a search bar container ![](./screenshots/added_searchbar.png)
 Added search filters and submit button ![](./screenshots/filters.png)
+Added job card ![](./screenshots/jobcard.png)
 
 
 ### Links

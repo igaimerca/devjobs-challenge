@@ -1,0 +1,31 @@
+.jobs {
+    justify-content: start;
+    width: 80%;
+    margin: 4rem auto;
+}
+.job-card {
+    background-color: #fff;
+    padding: 2rem;
+    width: 350px;
+    height: 180px;
+    border-radius: 3px;
+    position: relative;
+    .company-logo {
+        position: absolute;
+        top: -1rem;
+        left: 1.5rem;
+    }
+    .details {
+        margin: 1rem 0 3rem 0;
+    }
+    h2 {
+        color: var(--main-text);
+        margin: 0.5rem 0;
+    }
+    p {
+        margin: 0
+    }
+    h4 {
+        color: var(--primary);
+    }
+}
