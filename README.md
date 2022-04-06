@@ -5,12 +5,28 @@ This is a solution to the [Devjobs web app challenge on Frontend Mentor](https:/
 ## Table of contents
 
 - [Overview](#overview)
+- [Installation](#installation)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
 ## Overview
+
+## Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/igaimerca/devjobs-challenge.git
+   ```
+1. Install dependencies
+   ```sh
+   yarn install
+   ```
+1. Run in development mode
+   ```sh
+   yarn start
+   ```
+
 
 ### The challenge
 
