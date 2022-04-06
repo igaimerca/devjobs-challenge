@@ -1,18 +1,18 @@
 import React from 'react';
 import "./JobCard.scss";
 
-function JobCard({ logo, company, logoBackground, position, location }) {
+function JobCard({ currentJob }) {
     return (
         <div className="job-card">
-            <div style={{ backgroundColor: logoBackground }}  className="flex logo-container">
-            <img src={logo} className="company-logo" alt="" />
+            <div style={{ backgroundColor: currentJob.logoBackground }} className="flex logo-container">
+                <img src={currentJob.logo} className="company-logo" alt="" />
             </div>
             <div className="details">
-                <p>5h ago . Full Time</p>
-                <h2>{position}</h2>
-                <p>{company}</p>
+                <p>5h ago . {currentJob.contract}</p>
+                <h2>{currentJob.position}</h2>
+                <p>{currentJob.company}</p>
             </div>
-            <h4>{location}</h4>
+            <h4>{currentJob.location}</h4>
         </div>
     )
 }
